@@ -10,26 +10,13 @@
 (package! tree-sitter-langs)
 
 (package! org-page :recipe
-  (:host github
-   :repo "ethan-leba/org-page"))
-
-;; (use-package evil-lispy
-;; ;;    :load-path "emacs-pkg-dev/evil-lispy"
-;; ;;    )
+  (:local-repo "~/Documents/emacs-pkg-dev/org-page"
+   :build (:not compile)))
 
 (package! evil-lispy :recipe
   (:local-repo "~/Documents/emacs-pkg-dev/evil-lispy"
    :build (:not compile)))
 
-;; (add-load-path! "emacs-pkg-dev/evil-lispy/evil-lispy.el")
-;; (package! evil-lispy :recipe
-;; ;;   (:local-repo "emacs-pkg-dev/evil-lispy"
-;; ;;    :build (:not compile)))
-
 (package! tree-edit :recipe
   (:local-repo "~/Documents/emacs-pkg-dev/tree-edit"
    :build (:not compile)))
-
-(package! org-page :recipe
-  (:host github
-   :repo "ethan-leba/org-page"))
